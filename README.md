@@ -1,27 +1,38 @@
-# Sales-Data-Warehouse-Project
+# 📦 Sales Data Warehouse Project
 
-Welcome to the **Data Warehouse** Project Repository! 🚀
-This project provides a comprehensive overview of data warehousing, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights best practices in data engineering within the field.
+A complete end-to-end data engineering project demonstrating modern data warehousing practices using SQL Server, Medallion Architecture, and ETL pipelines. Built as a portfolio project to showcase practical data engineering skills and real-world analytical capabilities.
 
 ---
 ## 🏗️ Data Architecture
-
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+This project follows the Medallion Architecture to ensure scalability, data quality, and clear separation between raw, cleaned, and analytics-ready data.
 ![Data Architecture](https://github.com/Abdallah531/Sales-Data-Warehouse-Project/blob/main/docs/High%20Level%20Architecture.png)
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Business-ready data modeled into a star schema required for reporting and analytics.
+🔶 **Bronze Layer** – Raw Data  
+1- Stores raw data directly from source systems (CSV files).  
+2- Loaded into SQL Server without modifications.  
+3- Ensures full traceability of original data.  
+
+🔷 **Silver Layer** – Cleaned & Standardized Data  
+1- Handles data cleansing, normalization, and validation.  
+2- Resolves missing values, formatting issues, and inconsistencies.  
+3- Prepares data for modeling and analytics.  
+
+🟡 **Gold Layer** – Business-Ready Data  
+1- Final analytical layer modeled using a star schema.  
+2- Includes fact and dimension tables optimized for reporting.  
+3- Enables fast and accurate analytical queries.  
+
 
 ---
 ## 📖 Project Overview
 
-This project involves:
+This project demonstrates:
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-
+1. Modern **Data Architecture** using the Medallion (Bronze/Silver/Gold) model.  
+2. **ETL/ELT Pipelines** for extracting, transforming, and loading data.  
+3. **Data Modeling** including fact tables and dimension tables.  
+4. **Integration** of Multiple Data Sources (ERP + CRM).  
+5. **Clear documentation** suitable for business and analytics teams.  
 
 ## 🚀 Project Requirements
 
